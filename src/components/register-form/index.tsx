@@ -11,6 +11,8 @@ import { useMutation } from "@tanstack/react-query";
 import { postSignUp } from "../../api-gate/services";
 
 const RegisterForm = () => {
+  "use no memo";
+
   const methods = useForm<FormInputType>({
     defaultValues: FORM_DEFAULT_VALUES,
   });
